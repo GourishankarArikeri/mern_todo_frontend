@@ -16,7 +16,7 @@ const HomePage = () => {
   const handleTodo = async () => {
     const id = localStorage.getItem('userId');
     try {
-      await axios.post("http://localhost:4000/api/todo/addtodo", { todo, id });
+      await axios.post("https://todo-backend-mern-1.onrender.com/api/todo/addtodo", { todo, id });
       alert("Todo added");
       setTodo(''); // Clear input field after adding todo
       fetchTodos(); // Refresh todos after adding new one
