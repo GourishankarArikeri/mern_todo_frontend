@@ -1,18 +1,20 @@
-import React from 'react';
+import React from 'react'
+import {BrowserRouter, Routes , Route} from "react-router-dom"
+import LoginPage from './components/LoginPage'
+import RegisterPage from './components/RegisterPage'
+import HomePage from './components/HomePage'
 
-function App() {
+const App = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+      <Route path='/' element={<LoginPage/>}/>
+      <Route path='/reg' element={<RegisterPage/>}/>
+      <Route path='/home' element={<HomePage/>}/>
+        
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

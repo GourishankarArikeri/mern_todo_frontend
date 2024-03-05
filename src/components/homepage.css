@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+}
+.homepage-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.inputt{
+    flex: 0.5;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+.add-btn{
+    flex:0.1;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.85rem;
+    font-weight: bold;
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+}
+.todos-container{
+   width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction:column;
+    height: 400px;
+    overflow: scroll;
+    scrollbar-width: 0%;
+}
+.todos-container{
+    width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     flex-direction:column;
+     height: 400px;
+     overflow: scroll;
+ }::-webkit-scrollbar{
+    display: none;
+ }
+.todos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+.actions{
+    display: flex;
+    align-items: center;
+padding: 10px;
+gap: 10px;
+    justify-content: center;
+}
+.check-btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius:10px ;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: white;
+}
+.edit-btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius:10px ;
+    font-size: 1.5rem;
+    background-color: green;
+    color: white;
+}
+.delete-btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius:10px ;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
